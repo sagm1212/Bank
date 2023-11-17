@@ -1,0 +1,341 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+    font-family: 'Public Sans', sans-serif;
+}
+:root {
+    --DarkBlue: hsl(233, 26%, 24%);
+    --LimeGreen: hsl(136, 65%, 51%);
+    --BrightCyan: hsl(192, 70%, 51%);
+    --GrayishBlue: hsl(233, 8%, 62%);
+    --LightGrayishBlue: hsl(220, 16%, 96%);
+    --VeryLightGray: hsl(0, 0%, 98%);
+    --White: hsl(0, 0%, 100%);
+}
+.boton_1:hover {
+    opacity: 0.8;
+  }
+body{
+    width: 85%;
+    background-color: var(--VeryLightGray);
+}
+span, p, #poster{
+    color: var(--GrayishBlue);
+}
+header{
+    display: flex;
+    align-items: center;
+    background-color: var(--White);
+}
+.logo{
+    margin: 20px;
+}
+.logo img{
+    width: 100%;
+}
+.menu{
+    display: flex;
+    width: 30%;
+    justify-content: flex-start;
+    padding: 0 150px;
+    
+}
+.menu li{
+    padding-left: 5px;
+    list-style: none;
+    width: 100%;
+}
+.menu li a{
+    text-decoration: none;
+    font-size: small;
+    color: var(--GrayishBlue);
+}
+.menu li a::after{
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -20px;
+    width: 0px;
+    height: 4px;
+    /* background: var(--GrayishBlue); */
+    background: --webkit-gradient(linear, left top, right top, from(#31d35c), to(#2bb7da));
+    background: linear-gradient(90deg, #31d35c 0%, #2bb7da 100%);
+    
+    transition: all .5s;
+}
+.menu li a:hover::after{
+    width: 2cm;
+}
+.boton_1{
+    display: inline-block;
+    color: rgb(255, 255, 255);
+    font-size: 0.7rem;
+    cursor: pointer;
+    border-width: 0px;
+    border-style: initial;
+    border-color: initial;
+    border-image: initial;
+    background: linear-gradient(90deg, rgb(49, 211, 92) 0%, rgb(43, 183, 218) 100%);
+    border-radius: 20px;
+    padding: 12px 30px;
+    margin: 0;
+    font-weight: 1000;
+
+}
+.boton_menu{
+    display: none;
+    outline: none;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+.Arriba{
+    background-color: var(--VeryLightGray);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.Arriba #Izquierda{
+    align-items: center;
+    width: 40%;
+    transform: translateY(-60px);
+}
+#Izquierda h1{
+    color: var(--DarkBlue);
+    padding-bottom: 31px;
+    font-size: 57px;
+    line-height: 1.2;
+    font-weight: 200;
+}
+#Izquierda p{
+    line-height: 1.6;
+    padding-bottom: 34px;
+}
+.Arriba #Derecha{
+    width: 60%;
+    overflow: hidden;
+}
+#Derecha{
+    background-image: url(/images/bg-intro-desktop.svg);
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-position: top -260px right -520px;
+}
+#Derecha .mockups{
+    width: 100%;
+    transform: translate(110px, -50px);
+    
+}
+.Medio{
+    transform: translateY(-100px);
+    /* background-color: hsl(220, 16%, 96%); */
+    padding-bottom: 2cm;
+    padding-top: 2cm;
+
+}
+.Card{
+    display: flex;
+    justify-content: space-between;
+}
+.Medio .Card{
+    display: flex;
+    justify-content: space-between;
+    gap: 1.5em;
+}
+.Card img{
+    padding: 15px 0;
+}
+.Card h3{
+    padding: 15px 0;
+}
+.Detalle h2{
+    color: var(--DarkBlue);
+    font-size: 30px;
+    padding-bottom: 25px;
+    font-weight: 100;
+}
+.Card #cards{
+    margin-right: 10px;
+}
+.Abajo h2{
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+#Articulo{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+
+}
+.Articulos{
+    background-color: hsl(220, 16%, 96%);;
+}
+.img12{
+    justify-content: space-between;
+    width: 7cm;
+    height: 6cm;
+    border-radius: 10px 10px 0 0 ;
+}
+h6{
+    justify-content: center;
+    margin: 15px 0 15px 0;
+}
+h3{
+    color: var(--DarkBlue);
+    font-weight: 200;
+}
+h4{
+    margin: 20px 0 30px 0;
+    color: var(--DarkBlue);
+}
+h2{
+    color: var(--DarkBlue);
+    font-weight: 200;
+}
+footer{
+    background-color: hsl(233, 26%, 24%);
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 50px;
+    height: 3.50cm;
+    margin: 0;
+    align-items: center;
+}
+.Redes{
+    display: flex;
+}
+.Facebok:hover{
+    cursor: pointer;
+    background: linear-gradient(90deg, rgb(49, 211, 92) 0%, rgb(43, 183, 218) 100%);
+}
+.Youtube:hover{
+    cursor: pointer;
+    background: linear-gradient(90deg, rgb(49, 211, 92) 0%, rgb(43, 183, 218) 100%);
+}
+.Twitter:hover{
+    cursor: pointer;
+    background: linear-gradient(90deg, rgb(49, 211, 92) 0%, rgb(43, 183, 218) 100%);
+}
+.Pinterest:hover{
+    cursor: pointer;
+    background: linear-gradient(90deg, rgb(49, 211, 92) 0%, rgb(43, 183, 218) 100%);
+}
+.Instagram:hover{
+    cursor: pointer;
+    background: linear-gradient(90deg, rgb(49, 211, 92) 0%, rgb(43, 183, 218) 100%);
+}
+.footer1{
+    display: flex;
+    margin: 0;
+    text-align: center;
+    justify-content: space-between;
+}
+.logo2{
+    padding-right: 10px;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+    padding-bottom:1cm ;
+}
+ul{
+    padding: 0 27px 0 74px;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    font-size: 14px;
+    transform: translate(90px, -5px);
+}
+ul a{
+    text-decoration: none;
+    color: var(--LightGrayishBlue);
+    line-height: 2.5;
+}
+.Navegar1{
+    margin-right:-2cm;
+}
+.Navegar2{
+    margin-right: 5cm;
+}
+.footer2{
+    margin: 0;
+}
+.footer2 p{
+    font-size: 15px;
+    transform: translate(-70px, 13px);
+}
+
+@media screen and (max-width: 375px) {
+    body {
+      width: 100%;
+      padding: 0 10px;
+    }
+  
+    header {
+      display: block; /* Cambio a display block para que los elementos fluyan verticalmente */
+      text-align: center;
+    }
+  
+    .logo {
+      margin: 10px 0; 
+    }
+  
+    .menu {
+      width: 100%;
+      justify-content: center; 
+      padding: 0; 
+    }
+  
+    .menu li {
+      width: auto;
+      margin: 5px 0; 
+    }
+  
+    .menu li a::after {
+      content: none; 
+    }
+  
+    .Arriba #Izquierda {
+      width: 100%; 
+      transform: translateY(0); /* Eliminar transformación */
+    }
+  
+    #Derecha {
+      width: 100%;
+      background-position: top right; /* Ajustar posición del fondo */
+    }
+  
+    .Medio {
+      transform: translateY(0); 
+      padding: 20px 0; 
+    }
+  
+    .Card {
+      flex-direction: column; 
+      gap: 15px; /* Espaciado entre tarjetas */
+    }
+  
+    .Card img {
+      width: 100%; /* Ancho completo para las imágenes */
+    }
+  
+    .Detalle h2,
+    .Abajo h2,
+    #Articulo {
+      text-align: center; 
+    }
+  
+    .footer1,
+    .footer2 {
+      flex-direction: column; 
+      align-items: center; 
+    }
+  
+    ul {
+      padding: 0;
+      text-align: center; 
+    }
+  }
+  
